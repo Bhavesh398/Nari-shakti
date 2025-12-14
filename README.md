@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Nari Suraksha Saathi
 
-## Project info
+A comprehensive women's safety application providing emergency assistance, cyber safety education, legal rights information, and support resources.
 
-**URL**: https://lovable.dev/projects/c15f4a23-77fd-4cb0-8e22-7662114f9f85
+## Features
 
-## How can I edit this code?
+- **Emergency SOS**: Quick access to emergency contacts and services
+- **Cyber Safety**: Interactive learning modules with gamification
+- **Legal Rights**: Information about women's rights and legal resources
+- **Safety Tips**: Practical safety advice and guidelines
+- **Report Incidents**: Secure incident reporting system
+- **Mentor Chat**: Connect with mentors for guidance and support
+- **Resource Directory**: Comprehensive directory of support services
+- **Multi-language Support**: Available in multiple languages
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React with TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn-ui
+- **Styling**: Tailwind CSS
+- **Backend**: Supabase
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c15f4a23-77fd-4cb0-8e22-7662114f9f85) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or bun package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <repository-url>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd Nari-Suraksha-Saathi-main
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Environment Setup
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file in the root directory with your Supabase credentials:
 
-**Use GitHub Codespaces**
+```
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Development
 
-## What technologies are used for this project?
+```sh
+# Run development server
+npm run dev
 
-This project is built with:
+# Build for production
+npm run build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Preview production build
+npm run preview
+```
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/c15f4a23-77fd-4cb0-8e22-7662114f9f85) and click on Share -> Publish.
+This application can be deployed to:
+- Vercel
+- Netlify
+- Any static hosting provider supporting Vite applications
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+All rights reserved.
