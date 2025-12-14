@@ -1,78 +1,143 @@
-# Nari Suraksha Saathi
+# Ninja Dojo Guard
 
-A comprehensive women's safety application providing emergency assistance, cyber safety education, legal rights information, and support resources.
+A comprehensive AI-powered emotional support and mental wellness platform designed to help users navigate emotional challenges through gamified learning and AI-driven guidance.
 
-## Features
+## Project Overview
 
-- **Emergency SOS**: Quick access to emergency contacts and services
-- **Cyber Safety**: Interactive learning modules with gamification
-- **Legal Rights**: Information about women's rights and legal resources
-- **Safety Tips**: Practical safety advice and guidelines
-- **Report Incidents**: Secure incident reporting system
-- **Mentor Chat**: Connect with mentors for guidance and support
-- **Resource Directory**: Comprehensive directory of support services
-- **Multi-language Support**: Available in multiple languages
+Ninja Dojo Guard combines emotional intelligence with interactive learning experiences. The platform features:
 
-## Tech Stack
-
-- **Frontend**: React with TypeScript
-- **Build Tool**: Vite
-- **UI Components**: shadcn-ui
-- **Styling**: Tailwind CSS
-- **Backend**: Supabase
+- **Emotional AI System**: Advanced AI that understands and responds to emotional needs
+- **SOS Emergency Button**: Quick access to crisis support resources
+- **Gamified Learning**: Progression system with ranks (Ninja → Samurai → Sensei)
+- **Dashboard**: Real-time emotional tracking and wellness metrics
+- **Multi-language Support**: Accessible to users worldwide
 
 ## Getting Started
 
-### Prerequisites
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-- Node.js (v18 or higher)
-- npm or bun package manager
-
-### Installation
+Follow these steps:
 
 ```sh
-# Clone the repository
-git clone <repository-url>
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
 
-# Navigate to project directory
-cd Nari-Suraksha-Saathi-main
+# Step 2: Navigate to the project directory
+cd ninja-dojo-guard
 
-# Install dependencies
+# Step 3: Install dependencies
 npm install
 
-# Start development server
+# Step 4: Start the development server
 npm run dev
 ```
 
-### Environment Setup
-
-Create a `.env` file in the root directory with your Supabase credentials:
-
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_key
-```
+The application will be available at `http://localhost:8080`
 
 ## Development
 
+### Local Development with IDE
+
+Clone this repo and use your preferred IDE (VS Code, WebStorm, etc.) to make changes:
+
 ```sh
-# Run development server
+git clone <YOUR_GIT_URL>
+cd ninja-dojo-guard
+npm install
 npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
 ```
+
+### Edit Files Directly
+
+- **GitHub**: Navigate to files and click the pencil icon to edit
+- **GitHub Codespaces**: Click "Code" → "Codespaces" → "New codespace"
+- **Local IDE**: Clone and edit locally, then push changes
+
+## Tech Stack
+
+This project is built with:
+
+- **Vite**: Fast build tool and dev server
+- **TypeScript**: Type-safe JavaScript development
+- **React**: UI component library
+- **shadcn/ui**: Beautiful, accessible UI components
+- **Tailwind CSS**: Utility-first CSS framework
+- **Lucide React**: Icon library
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── EmotionalAI.tsx      # AI-powered emotional support
+│   ├── SOSButton.tsx         # Emergency crisis button
+│   └── ui/                   # Reusable UI components
+├── pages/
+│   ├── Dashboard.tsx         # Main dashboard
+│   ├── Index.tsx            # Landing page
+│   ├── Landing.tsx          # Welcome page
+│   ├── Login.tsx            # Authentication
+│   └── NotFound.tsx         # 404 page
+├── hooks/
+│   ├── use-mobile.tsx       # Mobile detection
+│   └── use-toast.ts         # Toast notifications
+├── lib/
+│   └── utils.ts             # Utility functions
+└── App.tsx                  # Main app component
+```
+
+## Features
+
+### Emotional AI
+- Conversational AI that understands emotional context
+- Personalized responses and guidance
+- Crisis intervention support
+
+### SOS Button
+- One-click access to emergency resources
+- Quick crisis hotline connections
+- Immediate support options
+
+### Dashboard
+- Emotional wellness tracking
+- Progress visualization
+- Personal insights and recommendations
 
 ## Deployment
 
-This application can be deployed to:
+### Using Lovable
+
+Simply visit your [Lovable Project](https://lovable.dev/projects/c15f4a23-77fd-4cb0-8e22-7662114f9f85) and click on Share → Publish.
+
+### Custom Deployment
+
+The project can be deployed to any modern hosting platform:
 - Vercel
 - Netlify
-- Any static hosting provider supporting Vite applications
+- AWS Amplify
+- GitHub Pages
+
+Build for production:
+```sh
+npm run build
+```
+
+## Custom Domain
+
+To connect a custom domain to your Lovable project:
+
+Navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-All rights reserved.
+This project is licensed under the MIT License.
+
+## Support
+
+For questions or support, please open an issue in the repository or contact the development team.
